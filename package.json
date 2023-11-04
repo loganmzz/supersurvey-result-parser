@@ -1,0 +1,24 @@
+{
+  "name": "supersurvey-result-parser",
+  "version": "1.0.0",
+  "description": "Parse and analyse CSV result from https://www.supersurvey.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganmzz/supersurvey-result-parser.git"
+  },
+  "keywords": [
+    "supersurvey",
+    "poll",
+    "csv"
+  ],
+  "author": "Logan Mzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loganmzz/supersurvey-result-parser/issues"
+  },
+  "homepage": "https://github.com/loganmzz/supersurvey-result-parser#readme"
+}
