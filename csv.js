@@ -31,7 +31,7 @@ class Reader {
         if (debug?.log) {
             console.log(`Reader.readUntil: start (${this.location.l},${this.location.c})`);
         }
-        let start = 0;
+        let start = this.i;
         while (this.current !== undefined && !chars.includes(this.current)) {
             this.next();
         }
@@ -59,7 +59,6 @@ class Reader {
             this.next(); // Passed '"'
             let string = '';
             let finished = false;
-            let start = this.i;
             while (!finished) {
                 let substring = this.readUntil('"');
                 string += substring;
@@ -67,7 +66,6 @@ class Reader {
                 if (this.current === '"') {
                     string += this.current;
                     this.next();  // Passed '"'
-                    start = this.i;
                 } else {
                     finished = true;
                 }
